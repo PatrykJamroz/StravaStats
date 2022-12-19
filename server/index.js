@@ -98,9 +98,7 @@ app.get(
 
 app.get("/api/athlete", async (req, res) => {
   console.log({ user: req.user });
-  console.log({ passpSes: passport.session() });
-  console.log({ cookieParser });
-  console.log({ sesh: cookieSession() });
+  console.log({ cookieParser: JSON.stringify(cookieParser) });
   fetch(
     `https://www.strava.com/api/v3/athlete?access_token=${
       req.user?.token ?? ""
