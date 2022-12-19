@@ -76,7 +76,7 @@ app.get(
     failureRedirect: "/login",
   }),
   function (req, res) {
-    res.redirect("http://localhost:8080");
+    res.redirect("https://statz.onrender.com");
   }
 );
 
@@ -153,6 +153,6 @@ const listener = app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening on port ${listener.address().port}`);
 });
 
-app.get("/*", function (req, res) {
-  res.sendfile(path.join(__dirname, "../client/build", "index.html"));
-});
+// app.get("/*", function (req, res) {
+//   res.sendfile(path.join(__dirname, "../client/build", "index.html"));
+// });

@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 
 export function Authorization() {
   const login = () => {
-    window.open('http://localhost:8080/auth/strava', '_self');
+    window.open('https://statz-api.onrender.com/auth/strava', '_self');
   };
   return (
     <Button onClick={login} variant="outlined">
