@@ -36,6 +36,7 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
+  "proxy": "https://statz-api.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
